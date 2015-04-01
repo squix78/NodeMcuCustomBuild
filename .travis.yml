@@ -1,5 +1,6 @@
 language: cpp
 before_install:
+- git clone --depth=50 --branch=master git://github.com/nodemcu/nodemcu-firmware.git squix78/NodeMcuCustomBuild
 - sudo apt-get install -y python-serial srecord
 install:
 - wget https://github.com/GeorgeHahn/nodemcu-firmware/raw/travis/tools/esp-open-sdk.tar.gz -O tools/esp-open-sdk.tar.gz
