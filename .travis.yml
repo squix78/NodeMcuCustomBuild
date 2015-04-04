@@ -31,5 +31,5 @@ deploy:
     - "$TRAVIS_BUILD_DIR/bin/${file_name_integer}"
   skip_cleanup: true
   on:
-    tags: false
+    tags: true
     repo: squix78/NodeMcuCustomBuild
