@@ -32,4 +32,4 @@ deploy:
   skip_cleanup: true
   on:
     tags: true
-    repo: squix/NodeMcuCustomBuild
+    repo: squix78/NodeMcuCustomBuild
