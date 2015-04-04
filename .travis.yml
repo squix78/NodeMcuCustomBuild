@@ -25,7 +25,7 @@ script:
 deploy:
   provider: releases
   api_key:
-    secure: e06f6946b94eb55516e0ddd90861edd731ad4dce
+    secure: co+7pTuSBsybFWmTb7Efwx67H8x5hScIIF9bEa4h8ow92EUOdYQNaey+kQeTtFZ1DyaYMapbg5M6Ua2BywzjoajVU8DU/v6w/lQrL0c8I8AS4+yk3ZsS8mSnpPwi8C7aEUFeaysUDiYJYFfowWK9T1Fpte3hrFgQ3sIVzZoZ96A=
   file:
     - "$TRAVIS_BUILD_DIR/bin/${file_name_float}"
     - "$TRAVIS_BUILD_DIR/bin/${file_name_integer}"
