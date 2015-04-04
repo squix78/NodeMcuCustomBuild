@@ -21,3 +21,15 @@ script:
 - cd bin/
 - file_name_integer="nodemcu_integer_${TRAVIS_TAG}.bin"
 - srec_cat -output ${file_name_integer} -binary 0x00000.bin -binary -fill 0xff 0x00000 0x10000 0x10000.bin -binary -offset 0x10000
+
+deploy:
+  provider: releases
+  api_key:
+    secure: e06f6946b94eb55516e0ddd90861edd731ad4dce
+  file:
+    - "$TRAVIS_BUILD_DIR/bin/${file_name_float}"
+    - "$TRAVIS_BUILD_DIR/bin/${file_name_integer}"
+  skip_cleanup: true
+  on:
+    tags: true
+    repo: squix/NodeMcuCustomBuild
